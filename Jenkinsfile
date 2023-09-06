@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'Maven 3.6.3'
+            image 'nginx'
             args '-v /root/.m2:/root/.m2'
         }
     }
