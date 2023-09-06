@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'nginx'
+            image '24.0.6'
             args '-v /root/.m2:/root/.m2'
         }
     }
