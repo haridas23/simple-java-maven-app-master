@@ -1,6 +1,9 @@
 pipeline {
-    agent {
-        docker {
+    agent any
+    stages {
+        stage('Build') {
+            agent {
+              docker {
             image 'gradle:8.2.0-jdk17-alpine'
             args '-v /root/.m2:/root/.m2'
         }
